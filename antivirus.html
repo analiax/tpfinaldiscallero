@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>calleroanaliafinal2.0</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" /><!--este lo copie de la carpeta slider, demos y abro el banner slider, copio esta linea yu pongo aca-->
+<link href="jquery/jquery-ui.css" rel="stylesheet">
+<link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="contenedor">
+		<div id="nav-sociales"><!--abre nav para los iconos de redes sociales-->
+	<ul>
+		<li><a href="https://web.facebook.com/"> <img src="img/facebook.png" width="35" height="35" alt=""/></a></li>
+		
+		<li><a href="https://www.instagram.com/"><img src="img/instagram.png" width="35" height="35" alt=""/></a></li>
+		
+		<li><a href="https://www.youtube.com/?app=desktop&hl=ES"><img src="img/youtube.png" width="35" height="35" alt=""/></a></li>
+		</ul>
+	</div><!--cierra nav-->
+		
+		
+<div id="encabezado">
+	 <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: https://www.jssor.com -->
+    <script src="slider/js/jssor.slider.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Orientation: 2,
+                $NoDrag: true
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1200;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /* jssor slider loading skin spin css */
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .jssora061 {display:block;position:absolute;cursor:pointer;}
+        .jssora061 .a {fill:none;stroke:#fff;stroke-width:360;stroke-linecap:round;}
+        .jssora061:hover {opacity:.8;}
+        .jssora061.jssora061dn {opacity:.5;}
+        .jssora061.jssora061ds {opacity:.3;pointer-events:none;}
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="img/slider2.jpg" />
+                <div data-u="thumb">Seguridad Informática</div>
+            </div>
+            <div>
+                <img data-u="image" src="img/slider3.jpg" />
+                <div data-u="thumb"></div>
+            </div>
+            <div>
+                <img data-u="image" src="img/slider4.jpg" />
+                <div data-u="thumb"></div>
+            </div>
+            <div>
+                <img data-u="image" src="img/slider5.jpg" />
+                <div data-u="thumb"></div>
+            </div>
+            <!--<div>
+                <img data-u="image" src="../img/gallery/980x380/048.jpg" />
+                <div data-u="thumb">Slide Description 005</div>
+            </div>
+            <div>
+                <img data-u="image" src="../img/gallery/980x380/044.jpg" />
+                <div data-u="thumb">Slide Description 006</div>
+            </div>
+            <div>
+                <img data-u="image" src="../img/gallery/980x380/050.jpg" />
+                <div data-u="thumb">Slide Description 007</div>
+            </div>
+            <div>
+                <img data-u="image" src="../img/gallery/980x380/049.jpg" />
+                <div data-u="thumb">Slide Description 008</div>
+            </div>
+            <div>
+                <img data-u="image" src="../img/gallery/980x380/052.jpg" />
+                <div data-u="thumb">Slide Description 009</div>
+            </div>
+            <div>
+                <img data-u="image" src="../img/gallery/980x380/051.jpg" />
+                <div data-u="thumb">Slide Description 010</div>
+            </div>-->
+            <div><img src="img/Leonardo_Phoenix_A_futuristic_and_hightech_illustration_of_a_r_2.jpg" width="1200" height="400" alt=""/>
+                <div style="position:absolute;top:50px;left:50px;width:450px;height:62px;z-index:0;font-size:16px;color:#000000;line-height:24px;text-align:left;padding:5px;box-sizing:border-box;">
+                </div>
+                <div data-u="thumb"></div>
+            </div>
+        </div>
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" style="position:absolute;bottom:0px;left:0px;width:980px;height:50px;color:#FFF;overflow:hidden;cursor:default;background-color:rgba(0,0,0,.5);">
+            <div data-u="slides">
+                <div data-u="prototype" style="position:absolute;top:0;left:0;width:980px;height:50px;">
+                    <div data-u="thumbnailtemplate" style="position:absolute;top:0;left:0;width:100%;height:100%;font-family:verdana;font-weight:normal;line-height:50px;font-size:16px;padding-left:10px;box-sizing:border-box;"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora061" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <path class="a" d="M11949,1919L5964.9,7771.7c-127.9,125.5-127.9,329.1,0,454.9L11949,14079"></path>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora061" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <path class="a" d="M5869,1919l5984.1,5852.7c127.9,125.5,127.9,329.1,0,454.9L5869,14079"></path>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->
+	
+	
+	
+</div><!--cierra encabezado-->
+	<div id="botonera">	<!--abre botonera-->
+	<ul>
+	<li><a href="index.html">Início</a></li>
+	<li><a href="importante.html">Importante</a></li>
+	<li><a href="virus.html">Virus</a></li>
+	<li><a href="antivirus.html">Antivirus</a></li>
+	<li><a href="contacto.html">Contacto</a></li>
+	</ul>
+	</div><!--cierra botonera-->		
+
+<div id="Centro">
+
+
+<!-- Tabs -->
+<h2 class="demoHeaders">Tipos de Antivirus</h2>
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Antivirus Preventivo</a></li>
+		<li><a href="#tabs-2">Antivirus identificadores</a></li>
+		<li><a href="#tabs-3">Antivirus Descontaminantes</a></li>
+		<li><a href="#tabs-4">Antivirus Inmunizadores</a></li>
+	</ul>
+	<div id="tabs-1">
+		<img src="img/virus 1..jpg"  width="500" height="400" alt=""/>
+<div class="textos">
+  <p> El antivirus preventivo es un tipo de software diseñado para proteger los dispositivos de posibles amenazas antes de que puedan causar daño. Su función principal es detectar y bloquear virus, malware y otros programas maliciosos antes de que se instalen en el sistema. A menudo, este tipo de antivirus está siempre activo y realiza análisis en tiempo real, monitoreando el comportamiento de los archivos y programas. Una de las características más importantes del antivirus preventivo es su capacidad para actualizarse automáticamente. Esto asegura que siempre tenga las últimas definiciones de virus y pueda reconocer las amenazas más recientes. Además, muchos antivirus preventivos incluyen herramientas como cortafuegos y protección contra phishing, que añaden una capa extra de seguridad. </p>
+		</div>
+		</div>
+	<div id="tabs-2">
+	<img src="img/virus 2..jpg" width="500" height="400" alt=""/>
+<div class="textos">
+  <p> El antivirus identificador es un tipo de software diseñado para detectar y reconocer programas maliciosos que ya han infectado un sistema. A diferencia de los antivirus preventivos, que se centran en bloquear amenazas antes de que se instalen, los antivirus identificadores analizan los archivos y el comportamiento del sistema para identificar aquellos que pueden ser peligrosos. Este tipo de antivirus utiliza diversas técnicas para detectar malware, incluyendo el escaneo de archivos en busca de patrones específicos asociados a virus conocidos. También puede analizar el comportamiento de los programas en tiempo real, lo que permite identificar actividades sospechosas que podrían indicar una infección.</p>
+		</div>
+		</div>
+	<div id="tabs-3">
+		<img src="img/virus 3..jpg"  width="500" height="400" alt=""/>
+<div class="textos">
+  <p>El antivirus descontaminante (o removedor de malware) es un componente clave del software de seguridad, diseñado para la erradicación de amenazas activas que ya han vulnerado el sistema. A diferencia de las herramientas preventivas, su función principal es un escaneo profundo para detectar y neutralizar archivos infectados por virus, gusanos, troyanos y spyware, restaurando la integridad operativa del dispositivo. Este proceso implica la cuarentena o eliminación definitiva del código malicioso. Utilizar un antivirus con capacidad descontaminante es esencial como medida de reacción para asegurar la limpieza total del sistema y la protección de los datos después de una infección.</p>
+		</div>
+		</div>
+	<div id="tabs-4">
+	<img src="img/virus 4..jpg"  width="500" height="400" alt=""/>
+<div class="textos">
+  <p>El antivirus inmunizador es un tipo de software de defensa proactiva, diseñado para prevenir infecciones antes de que se materialicen. Su objetivo es crear barreras y modificar configuraciones críticas del sistema para evitar que el malware pueda instalarse o ejecutarse. A diferencia de las herramientas de desinfección, el inmunizador se enfoca en la prevención: protege carpetas vitales, restringe el acceso a programas sospechosos y monitoriza el comportamiento del sistema para neutralizar cualquier intento de intrusión desde la raíz, garantizando una protección constante y anticipada contra nuevas amenazas. </p>
+	  </div></div>
+</div><!--cierra tabs-->
+	
+	</div><!--cierra centro-->	
+		<script src="jquery/external/jquery/jquery.js"></script>
+<script src="jquery/jquery-ui.js"></script>
+		<script>$( "#tabs" ).tabs();</script>
+<div id="pie">Callero Analia- Tp Final</div><!--cierra pie-->	
+</div>
+</body>
+</html>

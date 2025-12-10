@@ -1,0 +1,202 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+	
+<title>calleroanaliafinal2.0</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+	
+	<link href="jquery/jquery-ui.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="contenedor">
+		<div id="nav-sociales">
+	<ul>
+		<li><a href="https://web.facebook.com/"> <img src="img/facebook.png" width="35" height="35" alt=""/></a></li>
+		
+		<li><a href="https://www.instagram.com/"><img src="img/instagram.png" width="35" height="35" alt=""/></a></li>
+		
+		<li><a href="https://www.youtube.com/?app=desktop&hl=ES"><img src="img/youtube.png" width="35" height="35" alt=""/></a></li>
+		</ul>
+	</div><!--cierra nav-->
+<div id="encabezado">
+	 <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: https://www.jssor.com -->
+    <script src="slider/js/jssor.slider.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Orientation: 2,
+                $NoDrag: true
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1200;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /* jssor slider loading skin spin css */
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .jssora061 {display:block;position:absolute;cursor:pointer;}
+        .jssora061 .a {fill:none;stroke:#fff;stroke-width:360;stroke-linecap:round;}
+        .jssora061:hover {opacity:.8;}
+        .jssora061.jssora061dn {opacity:.5;}
+        .jssora061.jssora061ds {opacity:.3;pointer-events:none;}
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+       
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+       
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="img/slider2.jpg" />
+                <div data-u="thumb">Seguridad Informática</div>
+            </div>
+            <div>
+                <img data-u="image" src="img/slider3.jpg" />
+                <div data-u="thumb"></div>
+            </div>
+            <div>
+                <img data-u="image" src="img/slider4.jpg" />
+                <div data-u="thumb"></div>
+            </div>
+            <div>
+                <img data-u="image" src="img/slider5.jpg" />
+                <div data-u="thumb"></div>
+            </div>
+           
+            <div><img src="img/Leonardo_Phoenix_A_futuristic_and_hightech_illustration_of_a_r_2.jpg" width="1200" height="400" alt=""/>
+                <div style="position:absolute;top:50px;left:50px;width:450px;height:62px;z-index:0;font-size:16px;color:#000000;line-height:24px;text-align:left;padding:5px;box-sizing:border-box;">
+                </div>
+                <div data-u="thumb"></div>
+            </div>
+        </div>
+       
+        <div data-u="thumbnavigator" style="position:absolute;bottom:0px;left:0px;width:980px;height:50px;color:#FFF;overflow:hidden;cursor:default;background-color:rgba(0,0,0,.5);">
+            <div data-u="slides">
+                <div data-u="prototype" style="position:absolute;top:0;left:0;width:980px;height:50px;">
+                    <div data-u="thumbnailtemplate" style="position:absolute;top:0;left:0;width:100%;height:100%;font-family:verdana;font-weight:normal;line-height:50px;font-size:16px;padding-left:10px;box-sizing:border-box;"></div>
+                </div>
+            </div>
+        </div>
+      
+        <div data-u="arrowleft" class="jssora061" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <path class="a" d="M11949,1919L5964.9,7771.7c-127.9,125.5-127.9,329.1,0,454.9L11949,14079"></path>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora061" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <path class="a" d="M5869,1919l5984.1,5852.7c127.9,125.5,127.9,329.1,0,454.9L5869,14079"></path>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+  
+	
+	
+	
+	</div><!--cierra encabezado-->
+		
+		
+	<div id="botonera">	
+	<ul>
+	<li><a href="index.html">Início</a></li>
+	<li><a href="importante.html">Importante</a></li>
+	<li><a href="virus.html">Virus</a></li>
+	<li><a href="antivirus.html">Antivirus</a></li>
+	<li><a href="contacto.html">Contacto</a></li>
+	</ul>
+	</div><!--cierra botonera-->	
+
+		 <div id="Centro">
+	<div id="caja1">
+	<h1>¿Qué son los virus informáticos?</h1>
+    <img src="img/virusinformatico.jpg" width="400" height="300" alt=""/>
+<p>El término virus informático se refiere a un tipo de malware diseñado para auto-replicarse e infectar sistemas, archivos y programas sin el conocimiento del usuario. Actúan como parásitos digitales: una vez ejecutados, se propagan buscando dañar, modificar o eliminar datos, y comprometer la funcionalidad del equipo. Aunque los virus son solo una categoría dentro del malware (que incluye troyanos, gusanos y ransomware), su prevención es crucial. La mejor defensa implica el uso de software antivirus actualizado, la aplicación regular de parches de seguridad y una estricta cautela al interactuar con contenido digital no verificado.</p>
+	</div><!--cierracaja1-->
+			 	 
+	<div id="caja2">
+	<h2>Peligros</h2>
+	<p>Control de nuestro dispositivo
+		<br>
+Sacarnos fotos remotamente
+		<br>
+Grabarnos remotamente
+		<br>
+Robar nuestras contraseñas 
+		<br>
+Dejar nuestro dispositivo lento
+		<br>
+Borrar nuestros archivos e informaciones personales y esparcir por la internet
+    </p>
+	<img src="img/Virus-informaticos-2.jpg" width="413" height="295" alt=""/>
+    </div><!--cierracaja2-->  
+	</div><!--cierra centro-->
+	<div id="pie">callero analia - Tp Final</div><!--cierra pie-->
+</div><!--cierra contenedor-->
+</body>
+</html>
+

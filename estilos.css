@@ -1,0 +1,397 @@
+#accordion div {
+    color: black !important;
+}@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/*font-family: "Lilita One", sans-serif;
+font-family: "Prompt", sans-serif;
+ font-family: "Ubuntu", sans-serif;*/
+
+*{margin:0px;
+padding:0px;
+border:0px;
+}
+
+body{
+   background: linear-gradient(to bottom, rgba(244,242,238,1.00) 36%, #2C3E50 100%);
+}
+
+#contenedor{
+    width: 100%;/*ANCHO*/
+	max-width: none
+    
+} 
+
+#encabezado{
+    height: 460px;
+}
+
+#nav-sociales{
+background: linear-gradient(to bottom, rgba(146,142,142,1.00) 0%,rgba(0,28,112,1) 100%);
+    width: 100%;
+    height: 40px;
+}
+#nav-sociales ul{
+	width: 900px;
+    margin: auto;
+     
+}
+
+#nav-sociales ul li{
+    float:left;
+	list-style-type: none;
+}
+
+
+#botonera{
+    height: 50px;/*ALTURA*/
+    background-position: bottom;
+	background: linear-gradient(to bottom, rgba(103,100,100,1.00) 0%,rgba(0,28,112,1) 100%);
+	
+}
+
+#botonera ul{
+    width: 800px;	
+	margin: auto;
+
+}
+#botonera ul li{
+    width: 150px;
+    float: left;
+    line-height: 50px;
+    list-style-type: none;
+    text-align: center;
+}
+#botonera ul li a{
+font-family: "Prompt", sans-serif;
+    font-size: 14px;
+    color: rgba(251,251,251,1.00);
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#botonera ul li a:hover{
+    color: rgba(35,208,33,1.00);
+}
+
+#botonera ul li:hover{
+    background-color: rgba(232,202,202,0.52);
+	 text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+#Centro{
+    height: 900px;/*vertical*/
+    background-color: rgba(255,255,255,1.00);
+    width: 100%;
+}
+
+#pie{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px;
+    background: linear-gradient(to bottom, rgba(31,7,89,0.8) 0%,rgba(0,28,112,0.8) 100%);
+   font-family: "Prompt", sans-serif;
+    color: rgba(247,234,234,1.00);
+}
+
+#caja1{
+    width: 510px;
+    height: 800px;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 65px;
+    box-shadow: -13px -5px 13px 0px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, rgba(223,220,216,1.00) 2%,rgba(0,28,112,1) 100%);
+    margin-right: 25px;
+}
+
+#caja1 h1{
+    text-shadow: -4px 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: "Ubuntu", sans-serif;
+    color: rgba(2,7,41,1.00);
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+#caja1 p{
+	font-family: "Ubuntu", sans-serif;
+    color: rgba(255,255,255,1.00);
+    font-size: 20px;
+    text-align: justify;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#caja1 img{
+	display:block;
+	margin:auto	
+		
+}
+
+
+#caja2{
+    width: 510px;
+    height: 600px;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 130px;
+    margin-left: 25px;
+    box-shadow: -13px -5px 13px 0px rgba(0, 0, 0, 0.3);
+	background: linear-gradient(to bottom, rgba(223,220,216,1.00) 2%,rgba(0,28,112,0.8) 100%);
+    margin-right: 65px;
+}
+
+#caja2 h2{
+	font-family: "Ubuntu", sans-serif;
+    text-shadow: -4px 4px 10px rgba(0, 0, 0, 0.3);
+    color: rgba(2,7,41,1.00);
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#caja2 img{
+    display: block;
+    margin-top: 30px;
+    margin-left: 45px;
+    margin-right: 40px;
+}
+
+#caja2 p{
+    font-family: "Ubuntu", sans-serif;
+    color: rgba(0,0,0,1.00);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;	
+}
+
+
+.textos {
+    width: 550px;
+    height: 300px;
+    float: right;
+    margin-top: 10px;		
+  
+}
+#accordion img{
+    display: block;
+    box-shadow: -13px -13px 26px 0px rgba(0, 0, 0, 0.3);
+    float: left;
+	margin-top:150px;
+	margin-left: 50px;
+	
+}
+#accordion > div:nth-of-type(1) {
+    color: black;
+}
+.textos p{
+    font-family: "Ubuntu", sans-serif;
+    color: rgba(11,0,39,1.00);
+    text-align: justify;
+    line-height: 40px;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-right: 60px;
+}
+
+#contenido{
+	height: 670px;
+}
+
+#tabs img{
+    display: block;
+    box-shadow: -13px -13px 26px 0px rgba(0, 0, 0, 0.3);
+    float: left;
+    margin-top: 150px;
+    margin-left: 50px;	
+	
+}
+#caja4{
+    float: left;
+    width: 800px;
+    height: 700px;
+    background-color: rgba(23,3,70,0.89);
+    margin-top: 60px;
+    box-shadow: -13px -5px 13px 0px rgba(0, 0, 0, 0.3);
+    margin-left: 200px;
+	border: solid 8px rgba(151,23,5,1.00);
+	}
+
+#caja4 h3{
+    font-family: "Ubuntu", sans-serif;
+    color: rgba(255,255,255,1.00);
+    font-weight: 400;
+    font-size: 60px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#caja4 p{
+    font-family: "Ubuntu", sans-serif;
+    color: rgba(251,251,251,1.00);
+    font-weight: 200;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;	
+	
+}
+
+#caja4{
+    
+    width: 800px;
+    height: auto;
+    background-color: rgba(44, 62, 80, 0.89);
+    margin-top: 60px;
+    margin-left: auto; 
+    margin-right: auto; 
+    box-shadow: -13px -5px 13px 0px rgba(0, 0, 0, 0.3);
+	border: solid 8px #3498DB;
+    padding-bottom: 30px; 
+	}
+
+#Centro {
+    height: auto; 
+    overflow: hidden; 
+    padding-bottom: 30px; 
+}
+
+#datos-contacto {
+    width: 800px; 
+    margin: 30px auto; 
+    padding: 20px;
+    font-family: "Ubuntu", sans-serif;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.datos-texto {
+    float: left;
+    width: 45%; 
+    text-align: left;
+    padding-right: 5%;
+    color: #2C3E50;
+}
+
+.datos-mapa {
+    float: right;
+    width: 50%;
+    height: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.contenedor-video video {
+    width: 100%; 
+    height: auto;
+    display: block;
+    border: 5px solid #3498DB; 
+    border-radius: 4px;
+}
+
+.contenedor-video {
+    width: 700px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #2C3E50;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+	}
+/* ========================================= */
+/* --- 1. MEDIA QUERY PARA TABLETS (Ej: 900px) --- */
+/* ========================================= */
+
+@media (max-width: 900px) {
+    /* 1. Ajuste General de Contenido */
+    /* Reduce el ancho para que el contenido central quede mejor espaciado */
+    #contenedor {
+        /* No es necesario cambiar nada aquí si ya tiene 100% y max-width: 1200px */
+    }
+
+    /* 2. Ajuste de Navegación */
+    /* Hacemos que la navegación y la barra social se adapten */
+    #nav-sociales ul, #botonera ul {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        padding: 0 10px; /* Agrega un poco de espacio a los lados */
+        box-sizing: border-box;
+    }
+    
+    /* 3. Reajuste de Cajas Centrales (Permite que quepan) */
+    #caja1, #caja2 {
+        /* Reducimos el ancho de las cajas para que puedan caber lado a lado
+           en pantallas de 900px, usando porcentajes. */
+        width: 45%; 
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+}
+
+
+/* ======================================== */
+/* --- 2. MEDIA QUERY PARA MÓVILES (Ej: 700px) --- */
+/* ======================================== */
+
+@media (max-width: 700px) {
+    /* Hacemos que la columna de contenido se apile verticalmente */
+    #caja1, #caja2 {
+        float: none; /* Desactiva la flotación */
+        width: 90%; /* Ocupa casi todo el ancho */
+        margin-left: auto; /* Centra la caja */
+        margin-right: auto;
+        
+        /* Elimina el desfase vertical de caja2 y la centra */
+        margin-top: 30px; 
+    }
+    
+    #caja1 {
+        height: auto; /* Permite que la altura se ajuste al contenido */
+    }
+    
+    #caja2 {
+        height: auto; /* Permite que la altura se ajuste al contenido */
+        /* Aseguramos que #caja2 no tenga un margin-top grande y se centre */
+        margin-top: 30px; 
+    }
+    
+    /* Aseguramos que el encabezado (slider) no tenga un alto excesivo en móvil */
+    #encabezado {
+        height: 250px; /* Reducimos la altura del banner */
+    }
+    
+    /* Centramos el menú de navegación */
+    #botonera ul li {
+        width: 100%; /* Cada enlace ocupa todo el ancho */
+        float: none; /* Apila los enlaces */
+        line-height: 40px;
+    }
+    
+    /* Ajustamos el tamaño de fuente para que sea más legible en móvil */
+    #caja1 h1, #caja2 h2 {
+        font-size: 20px;
+    }
+    #caja1 p, #caja2 p {
+        font-size: 16px;
+    }
+}
